@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "ATframework3demo": {
+      "commandName": "Project",
+      "commandLineArgs": "debug",
+      "workingDirectory": "C:\\BitrixQAautomationLearning2022-master\\ATlearning\\ATframework3demo\\bin\\Debug\\net6.0",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64700;http://localhost:64701"
+    }
+  }
+}
