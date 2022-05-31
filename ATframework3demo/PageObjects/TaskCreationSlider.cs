@@ -70,6 +70,7 @@ namespace ATframework3demo.PageObjects
             if (!taskDescriptionCheck.AssertTextContains(task.Description, "описание задачи неверно"))
                 Log.Error("Описание задачи не совпало с заданным");
             var taskCommentCheck = new WebItem("//div[contains(@id, 'record-TASK') and contains(@class, 'feed-com-text')]/div", "коммент к задаче");
+            taskCommentCheck.WaitElementDisplayed();
             if (!taskCommentCheck.AssertTextContains(commentText, ""))
                 Log.Error("Комментарий не совпал с заданным");
 
